@@ -5,6 +5,7 @@ php:
   - '5.6'
 
 before_script:
+  - php-config
   - phpize
   - ./configure
   - make
