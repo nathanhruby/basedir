@@ -15,7 +15,7 @@ install:
   - sudo apt-get build-dep php5
   - sudo apt-get install git libmcrypt-dev libreadline-dev
   - curl -L http://git.io/phpenv-installer | bash
-  - phpenv install "${PHPVER}"
+  - travis_wait phpenv install "${PHPVER}"
   - phpenv global "${PHPVER}"
   - phpenv rehash
 
