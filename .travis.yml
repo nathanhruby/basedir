@@ -16,6 +16,7 @@ install:
   - sudo apt-get install git libmcrypt-dev libreadline-dev
   - curl -L http://git.io/phpenv-installer | bash
   - phpenv install "${PHPVER}"
+  - phpenv global "${PHPVER}"
   - phpenv rehash
 
 before_script:
